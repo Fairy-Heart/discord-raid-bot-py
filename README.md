@@ -1,11 +1,9 @@
 **Đây là một discord bot có chức năng**
 # RAID BẤT KÌ MÁY CHỦ DISCORD NÀO
 
-**Miễn là bạn có đủ kiến thức**
-**Về Discord, Bot, Token**
+**Miễn là bạn có đủ kiến thức về Discord, Bot, Token**
 
-**Thay thế TOKEN_CỦA_BẠN_Ở_ĐÂY**
-**Bằng Token thực tế của bot discord của bạn**
+**Thay thế TOKEN_CỦA_BẠN_Ở_ĐÂY bằng Token thực tế của bot discord của bạn**
 
 **Bot sẽ được update thêm**
 
