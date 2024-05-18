@@ -39,10 +39,5 @@ class Nuke(commands.Cog):
             )
         print('>>> SPAM.....')
 
-        # xóa mọi emoji trong máy chủ
-
-        await Guild.emoji.delete(reason = 'Nuke by Fuzzy-chan')
-
-
 async def setup(bot):
     await bot.add_cog(Nuke(bot))
