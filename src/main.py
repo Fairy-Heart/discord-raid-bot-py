@@ -26,7 +26,8 @@ bot = commands.Bot(
 cogs_list = [
     'cogs.nuke',
     'cogs.events',
-    'cogs.ban_all'
+    'cogs.ban_all',
+    'cogs.mass_kick'
 ]
 
 
