@@ -18,7 +18,7 @@ class Nuke(commands.Cog):
         
         number = 0
         while number < 100: 
-            await asyncio.sleep(0,75)
+            await asyncio.sleep(0.75)
             await Guild.create_text_channel('nuke-by-fuzzy-chan', reason='nuke by fuzzy chan')
             number += 1
 
