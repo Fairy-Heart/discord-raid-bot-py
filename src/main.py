@@ -27,7 +27,8 @@ cogs_list = [
     'cogs.nuke',
     'cogs.events',
     'cogs.ban_all',
-    'cogs.mass_kick'
+    'cogs.mass_kick',
+    'cogs.massdm'
 ]
 
 
